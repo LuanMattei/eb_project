@@ -1,4 +1,4 @@
-package com.example.course.services.exception;
+package com.example.eb_project.servicies.exception;
 
 public class ObjectNotFoundException extends RuntimeException{
     private static final long serialVersionUID = 1L;
