@@ -1,0 +1,24 @@
+package com.example.eb_project.entities;
+
+public enum postosGraduacoes {
+    SOLDADO,
+    CABO,
+    ALUNO,
+    TERCEIRO_SARGENTO,
+    SEGUNDO_SARGENTO,
+    PRIMEIRO_SARGENTO,
+    SUBTENENTE,
+    ASPIRANTE,
+    SEGUNDO_TENENTE,
+    PRIMEIRO_TENENTE,
+    CAPITAO,
+    MAJOR,
+    TENENTE_CORONEL,
+    CORONEL,
+    GENERAL_DE_BRIGADA,
+    GENERAL_DE_DIVISAO,
+    GENERAL_DE_EXERCITO,
+    MARECHAL
+
+
+}
