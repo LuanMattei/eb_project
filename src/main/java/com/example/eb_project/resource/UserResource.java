@@ -1,5 +1,6 @@
 package com.example.eb_project.resource;
 
+import com.example.eb_project.DTO.UserDTO;
 import com.example.eb_project.entities.User;
 import com.example.eb_project.servicies.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +19,12 @@ public class UserResource {
     @Autowired
     private UserService service;
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<List<User>> findAll(){
+    public ResponseEntity<List<UserDTO>> findAll(){
         return ResponseEntity.ok().body(service.findAll());
     }
     @RequestMapping(value = {"/{id}"},method = RequestMethod.GET)
     public ResponseEntity<User> findById(@PathVariable String id){
         return  ResponseEntity.ok().body(service.findById(id));
     }
+
 }

@@ -1,5 +1,6 @@
 package com.example.eb_project.servicies;
 
+import com.example.eb_project.DTO.UserDTO;
 import com.example.eb_project.entities.User;
 import com.example.eb_project.repository.UserRepository;
 import com.example.eb_project.servicies.exception.ObjectNotFoundException;
@@ -23,7 +24,7 @@ public class UserService {
         return rep.findAll();
     }
     public User findById(String id){
-        Optional<User> user = rep.findById(id);
+        Optional<User> user =  rep.findById(id);
         return user.orElseThrow(()-> new ObjectNotFoundException("Object not found"));
     }
     public ResponseEntity<User> insert(User obj){
